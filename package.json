@@ -1,0 +1,31 @@
+{
+  "name": "thinttp",
+  "version": "0.0.0",
+  "description": "",
+  "src": "src/index.js",
+  "scripts": {
+    "lint": "eslint --ext js src/",
+    "lint:fix": "npm run lint -- --fix",
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/ktalebian/thinttp.git"
+  },
+  "files": [
+    "src"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run test"
+    }
+  },
+  "author": "Kousha Talebian <k@ousha.me>",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.3.1",
+    "eslint-config-twilio": "^1.26.0",
+    "husky": "^4.2.5"
+  }
+}

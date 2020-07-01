@@ -1,0 +1,6 @@
+{
+  "extends": ["twilio"],
+  "parserOptions": {
+    "ecmaVersion": 2018
+  }
+}
